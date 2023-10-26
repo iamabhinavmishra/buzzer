@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Join Session</title>
+  <link rel="stylesheet" type="text/css" href="styles2.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Join Session</h1>
+    <form id="joinForm">
+      <input type="text" id="sessionIDInput" placeholder="Session ID" required>
+      <input type="text" id="usernameInput" placeholder="Username" required>
+      <button type="submit">Join</button>
+      <button id="buzzButton" style="display: none">Buzz</button>
+    </form>
+  </div>
+
+  <!-- Include the same button in your join.html file with the same id -->
+<button id="clearBuzzersButton" style="display: none">Clear Buzzers</button>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+  <script src="join.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* Reset some default styles and set a basic font */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the container */
+.container {
+  width: 100%; /* Full width container */
+  max-width: 400px;
+  text-align: center;
+  padding: 30px; /* Increase the padding for more space */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-top: 60px; /* Add padding from the top */
+}
+
+/* Style the heading */
+h1 {
+  font-size: 32px; /* Increase the font size */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style form elements */
+form {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 20px; /* Increase the padding */
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 10px; /* Increase the border radius */
+  background-color: #f9f9f9;
+  font-size: 22px; /* Increase the font size */
+}
+
+/* Style the submit button */
+button[type="submit"], button#clearBuzzersButton {
+  width: 100%;
+  padding: 16px; /* Increase the padding */
+  margin-top: 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 10px; /* Increase the border radius */
+  font-size: 24px; /* Increase the font size */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover, button#clearBuzzersButton:hover {
+  background-color: #0056b3;
+}
+
+/* Make the "Buzz" button circular and center it */
+button#buzzButton {
+  width: 100px; /* Increase the button width */
+  height: 100px; /* Increase the button height */
+  border-radius: 50%; /* Make it a circle */
+  background-color: #FF5722;
+  color: #fff;
+  border: none;
+  font-size: 30px; /* Increase the font size */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px; /* Add top margin to center and provide padding from the top */
+}
+
+button#buzzButton:hover {
+  background-color: #FF7043;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  input[type="text"] {
+    font-size: 18px; /* Increase the font size for mobile */
+  }
+
+  button[type="submit"], button#clearBuzzersButton {
+    font-size: 20px; /* Increase the font size for mobile */
+  }
+
+  /* Adjust the Buzz button size for mobile */
+  button#buzzButton {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+  }
+}

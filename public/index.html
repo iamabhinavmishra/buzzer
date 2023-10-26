@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Competition</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Competition</h1>
+    <div class="options">
+      <button id="createSessionButton">Create Session</button>
+      <button id="joinSessionButton">Join Session</button>
+    </div>
+    <div class="session-details" style="display: none;">
+      <h2>Session Details</h2>
+      <p>Session ID: <span id="sessionID"></span></p>
+      <h2>Connected Users</h2>
+      <ul id="connectedUsers"></ul>
+      <h2>Button Click Order</h2>
+      <ul id="buttonClickOrder"></ul>
+    </div>
+  </div>
+  <button id="clearBuzzersButton">Clear Buzzers</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
